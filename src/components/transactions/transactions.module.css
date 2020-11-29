@@ -1,0 +1,22 @@
+.table {
+  width: 900px;
+}
+
+.table th {
+  width: 300px;
+  height: 50px;
+  background-color: #5dade2;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.table td {
+  width: 300px;
+  height: 50px;
+  text-transform: capitalize;
+}
+
+.table tr:nth-child(2n) {
+  background-color: #d0d3d4;
+}

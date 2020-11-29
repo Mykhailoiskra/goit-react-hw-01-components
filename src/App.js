@@ -1,10 +1,10 @@
 import "./App.css";
 
 // import of components
-import Profile from "./components/Profile";
-import Statistics from "./components/Statistics";
-import FriendList from "./components/Friend-list";
-import TransactionsHistory from "./components/Transactions";
+import Profile from "./components/Profile/Profile";
+import Statistics from "./components/Statistics/Statistics";
+import FriendList from "./components/Friend-list/Friend-list";
+import TransactionsHistory from "./components/transactions/Transactions";
 
 // import of data-files
 import userData from "./data/user.json";
