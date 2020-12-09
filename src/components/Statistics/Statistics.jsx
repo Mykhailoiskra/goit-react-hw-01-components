@@ -12,11 +12,7 @@ function Statistics({ title, stats }) {
             className={s.item}
             key={item.id}
             style={{
-              backgroundColor: `rgb(${Math.floor(
-                Math.random() * (255 - 0) + 0
-              )}, ${Math.floor(Math.random() * (255 - 0) + 0)}, ${Math.floor(
-                Math.random() * (255 - 0) + 0
-              )})`,
+              backgroundColor: randomRgbColor(),
             }}
           >
             <span className={s.label}>{item.label}</span>
@@ -40,3 +36,9 @@ Statistics.propTypes = {
     })
   ),
 };
+
+function randomRgbColor() {
+  return `rgb(${Math.floor(Math.random() * (255 - 0) + 0)}, ${Math.floor(
+    Math.random() * (255 - 0) + 0
+  )}, ${Math.floor(Math.random() * (255 - 0) + 0)})`;
+}
